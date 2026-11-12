@@ -1,0 +1,32 @@
+{
+  "name": "HEC Concept Note Template — retrieval evaluation set",
+  "description": "Ground-truth QA pairs for Phase 3 (Hit Rate@k / MRR@k). Each item declares keywords that MUST appear in a chunk for it to count as correct. Add items as you add more PDFs.",
+  "top_k": 3,
+  "items": [
+    {
+      "id": "q1",
+      "question": "What is the title of the document?",
+      "expected_keywords": ["Concept Note Template", "Harnessing Youth Potential"]
+    },
+    {
+      "id": "q2",
+      "question": "Which organization issued this document?",
+      "expected_keywords": ["Higher Education Commission", "Research & Innovation Division"]
+    },
+    {
+      "id": "q3",
+      "question": "What is the seed funding for?",
+      "expected_keywords": ["Seed Funding", "Defence Technologies", "Defence & Niche"]
+    },
+    {
+      "id": "q4",
+      "question": "What technological areas does this call cover?",
+      "expected_keywords": ["Niche Technologies", "Defence Technologies", "defence"]
+    },
+    {
+      "id": "q5",
+      "question": "Whose guidance should be followed to prepare the concept note?",
+      "expected_keywords": ["Call for Proposal Guidance", "focal person", "HEC focal"]
+    }
+  ]
+}

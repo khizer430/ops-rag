@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------------------
+# ops-rag :: dependency manifest
+# Pinned with >= floors so the project installs cleanly on a fresh machine.
+# ---------------------------------------------------------------------------
+
+# --- Phase 1: Document ingestion ---
+pypdf>=4.2.0                    # pure-python PDF text extraction
+langchain-text-splitters>=0.2.0 # RecursiveCharacterTextSplitter (no langchain core needed)
+
+# --- Phase 2: Embeddings & vector database ---
+sentence-transformers>=3.0.1    # all-MiniLM-L6-v2 dense embeddings
+chromadb>=0.5.0                 # local, persistent vector store
+
+# --- Phase 4: Generation (local, key-free) ---
+requests>=2.32.3                # talks to a local Ollama instance (optional path)
+
+# --- Phase 5: Backend API ---
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+pydantic>=2.7.0
+python-multipart>=0.0.9         # required for Streamlit/PDF upload endpoints later
+
+# --- Phase 6: Frontend dashboard ---
+streamlit>=1.36.0
+pandas>=2.2.2
+
+# --- Tooling ---
+pytest>=8.2.0

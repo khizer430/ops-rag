@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data (Do not upload user PDFs or generated databases)
+data/pdfs/*
+data/processed/*
+data/chroma/*
+!data/pdfs/.gitkeep
+!data/processed/.gitkeep
+!data/chroma/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
